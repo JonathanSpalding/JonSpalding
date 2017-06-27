@@ -1,0 +1,34 @@
+<body>
+
+
+  <link rel="stylesheet" type="text/css" href="js/Profile/profileStyles.css">
+
+	</div>
+	<a href="#/"> Home </a>
+	<a href="#/profile"> Profile </a>
+	<a href="#/courses"> Courses </a>
+</div>
+
+<h1>Dashboard</h1>
+
+<p>{{profile.name}}</p>
+
+<input ng-model="profile.name"/>
+
+<button ng-click="update()">Update Profile</button>
+
+<input ng-submit="pressedEnter()" ng-model="thing.name"></input>
+<button ng-click="addThing()">Add Thing</button>
+<div ng-repeat="thing in things">
+	{{thing.name}}
+	<button ng-click="removeThing(thing)">Destroy</button>
+</div>
+
+<!-- <div style='z-index: 1' class="creatingGame">
+	<new-game-button ng-click="toggle()"></new-game-button>
+	<add-player-button></add-player-button>
+	<div id="space-for-players"></div>
+	<div id="space-for-new-game"></div>
+</div> -->
+
+</body>
